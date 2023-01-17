@@ -3,18 +3,16 @@ import java.util.Scanner;
 
 public class SobreMim {
     public static void main(String [] args){
-        Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
+        Scanner scan = new Scanner(System.in).useLocale(Locale.US);
         // lendo dados do usuario
         System.out.println("Informe seu nome? ");
-        String nome = scanner.next();
+        String nome = scan.next();
         System.out.println("Informe seu sobrenome? ");
-        String sobrenome = scanner.next();
+        String sobrenome = scan.next();
         System.out.println("Informe sua idade? ");
-        int idade = scanner.nextInt();
+        int idade = scan.nextInt();
         System.out.println("Informe sua altura? ");
-        double altura = scanner.nextDouble();
-        
-
+        double altura = scan.nextDouble();
 
         // imprimindo a mensagem
         System.out.println("Olá, me chamo ".concat(nome).concat(" ").concat(sobrenome));
